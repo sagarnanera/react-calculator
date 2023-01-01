@@ -1,38 +1,37 @@
+@font-face {
+  font-family: 'Digital';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Digital Numbers Regular'), url("./fonts/DigitalNumbers-Regular.woff") format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Digital;
+  font-weight: 800;
+  font-size: 30px;
+}
+
 .App {
-  text-align: center;
+  height: 100vh;
+  background-color: beige;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.display {
+  height: 30vh;
+  background-color: rgb(28, 38, 38);
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.keypad {
+  height: 70vh;
+  background-color: rgb(137, 47, 47);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  font-size: 30px;
+  font-family: digital;
+  padding-right: 10px;
 }
